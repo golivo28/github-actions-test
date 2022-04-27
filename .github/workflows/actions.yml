@@ -6,11 +6,11 @@ jobs:
   run-github-actions:
     runs-on: ubuntu-latest
     steps:
-      - name: List files
+      - name: Checkout
         uses: actions/checkout@v2
+      - name: Lis files
         run: |
           pwd
-          ls
           cat $(ls)
       - name: Simple JS Action
         id: greet
