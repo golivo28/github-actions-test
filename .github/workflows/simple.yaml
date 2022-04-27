@@ -19,6 +19,7 @@ jobs:
         shell: python
   run-bash-on-windows:
     runs-on: windows-latest
+    # needs: ["run-shell-command"] in case you want your job to depend on the previous one and therefore run only after it's finished.
     steps:
       - name: do something
         run: echo "Hello world!!"
