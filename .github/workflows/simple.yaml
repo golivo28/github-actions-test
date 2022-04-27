@@ -10,6 +10,6 @@ jobs:
         run: echo "¡Cule vaina bacana!"
       - name: multiline script
         run: |
-          python -v
-          pip -v
+          python --version
+          pip --version
           
