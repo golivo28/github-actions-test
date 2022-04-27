@@ -17,4 +17,10 @@ jobs:
           import platform
           print(platform.processor())
         shell: python
+  run-bash-on-windows:
+    runs-on: windows-latest
+    steps:
+      - name: do something
+        run: echo "Hello world!!"
+        shell: bash
           
